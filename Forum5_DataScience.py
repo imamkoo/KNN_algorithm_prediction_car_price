@@ -112,7 +112,7 @@ plt.ylabel('Mean Squared Error (MSE)')
 plt.title('Elbow Curve for Test')
 
 
-# In[40]:
+# In[43]:
 
 
 #Melakukan koreksi nilai K dengan menggunakan nilai K terbaik berdasarkan hasil dari Elbow method
@@ -127,7 +127,7 @@ acc2 = new_model.score(test_x, test_y)
 print(' Accuracy of new model (%):', acc2*100, '\n', 'Accuracy of old model (%):', acc1*100, '\n Improvement (%):', (acc2-acc1)*100)
 
 
-# In[41]:
+# In[44]:
 
 
 #Percobaan 1
@@ -138,8 +138,8 @@ print(' Accuracy of new model (%):', acc2*100, '\n', 'Accuracy of old model (%):
 data_mobil_bekas = np.array([[2019,5000,145,30.2,2]])
 prediction_old = model.predict(data_mobil_bekas)
 prediction_new = new_model.predict(data_mobil_bekas)
-print(f"Hasil Prediksi harga rumah dengan old model: £{prediction_old}, atau jika dirupiahkan yaitu: Rp{prediction_old* 16259*1e-6} Juta.")
-print(f"Hasil Prediksi harga rumah dengan new model: £{prediction_new}. atau jika dirupiahkan yaitu: Rp{prediction_new* 16259*1e-6} Juta.")
+print(f"Hasil Prediksi harga mobil dengan old model: £{prediction_old}, atau jika dirupiahkan yaitu: Rp{prediction_old* 16259*1e-6} Juta.")
+print(f"Hasil Prediksi harga mobil dengan new model: £{prediction_new}. atau jika dirupiahkan yaitu: Rp{prediction_new* 16259*1e-6} Juta.")
 
 
 # In[ ]:
