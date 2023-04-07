@@ -112,12 +112,12 @@ plt.ylabel('Mean Squared Error (MSE)')
 plt.title('Elbow Curve for Test')
 
 
-# In[29]:
+# In[40]:
 
 
 #Melakukan koreksi nilai K dengan menggunakan nilai K terbaik berdasarkan hasil dari Elbow method
-#Nilai K terbaik adalah nilai K yang menghasilkan MSE minimum, dalam kasus ini k=86
-new_model = KNN_Reg(n_neighbors=86)
+#Nilai K terbaik adalah nilai K yang menghasilkan MSE minimum, dalam kasus ini k=87
+new_model = KNN_Reg(n_neighbors=87)
 
 # Train model
 new_model.fit(train_x, train_y)
@@ -127,7 +127,7 @@ acc2 = new_model.score(test_x, test_y)
 print(' Accuracy of new model (%):', acc2*100, '\n', 'Accuracy of old model (%):', acc1*100, '\n Improvement (%):', (acc2-acc1)*100)
 
 
-# In[39]:
+# In[41]:
 
 
 #Percobaan 1
